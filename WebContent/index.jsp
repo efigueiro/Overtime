@@ -6,10 +6,10 @@
 <html>
 
   <head>
-    <title>My Homework v1.0</title>
+    <title><%=Msg.getProperty("application.name")%></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="<%=request.getContextPath()%>/css/bootstrap.min.css" rel="stylesheet" media="screen">
   </head>
   
   <body>
@@ -18,11 +18,11 @@
 			<div class="span12">
 				<img src="img/man.png" style="float: left;"/>
 				<form class="form-inline" style="float: right;">
-  					<input  type="text" class="input-small" placeholder="Usuário">
-  					<input type="password" class="input-small" placeholder="Senha">
+  					<input  type="text" class="input-small" placeholder="<%=Msg.getProperty("label.userName")%>">
+  					<input type="password" class="input-small" placeholder="<%=Msg.getProperty("label.password")%>">
   					<label class="checkbox">
   					</label>
-  					<button type="submit" class="btn">Entrar</button>
+  					<button type="submit" class="btn"><%=Msg.getProperty("button.enter")%></button>
 				</form>
 			</div>
 		</div>
@@ -32,11 +32,11 @@
 			<!--nav bar-->
 				<div class="navbar">
   					<div class="navbar-inner">
-    					<a class="brand" href="#">My Homework</a>
+    					<a class="brand" href="#"><%=Msg.getProperty("application.name")%></a>
     					<ul class="nav">
      						<li class=""><a href="#">Página Inicial</a></li>
      						<li class="dropdown">
-    							<a class="dropdown-toggle" data-toggle="dropdown" href="#"> Disciplinas<b class="caret"></b> </a>
+    							<a class="dropdown-toggle" data-toggle="dropdown" href="#"><%=Msg.getProperty("application.name")%><b class="caret"></b> </a>
     							<ul style="padding:10px;" class="dropdown-menu">
     								<br>
       								<p><a href="#">Lab Algoritimos II 2013/2</a></p>
@@ -60,15 +60,15 @@
     		<div class="span10">
      	 		<div class="hero-unit">
   					<h3>Bem vindo!</h3>
-  					<p>Este sistema foi desenvolvido para centralizar e facilitar a visualização dos meus trabalhos realizados no curso Tecnol Anál.Desenv.Sist.FatPoa Senac-RS.</p>
-  					<p>Aluno: Éverson de Souza Figueiró</p>
+  					<p><%=Msg.getProperty("application.description")%></p>
+  					
   				</div>
     		</div>
   		</div>
 	</div>
     
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<%=request.getContextPath()%>/js/bootstrap.min.js"></script>
   </body>
   
 </html>
