@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="<%=request.getContextPath()%>/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="<%=request.getContextPath()%>/img/clock.ico">
   </head>
   
   <body>
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span12">
-				<img src="img/man.png" style="float: left;"/>
+				<img src="<%=request.getContextPath()%>/img/clock.png" style="float: left; padding:10px;"/>
 				<form class="form-inline" style="float: right;">
   					<input  type="text" class="input-small" placeholder="<%=Msg.getProperty("label.userName")%>">
   					<input type="password" class="input-small" placeholder="<%=Msg.getProperty("label.password")%>">
