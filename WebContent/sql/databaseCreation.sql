@@ -4,7 +4,6 @@
 create table users
 (
   user_id serial not null,
-  email varchar(300) not null,
   user_name varchar(300) not null,
   password varchar(150) not null,
   creation_date date default current_date not null,
@@ -12,16 +11,28 @@ create table users
   constraint user_pk primary key(user_id)
 );
 
-create table page
+create table corporation
 (
-  page_id serial not null,
-  title varchar(300) not null,
-  file_name varchar(300) not null,
-  url varchar(300) not null,
+  corporation_id serial not null,
+  name varchar(300) not null,
+  address varchar(300) not null,
+  phone varchar(150) not null,
+  position varchar(150) not null,
+  first_work_day date not null,
+  last_work_day date not null,
   description text not null,
-  creation_date date default current_date not null,
-  unique(page_id, title, file_name),
-  constraint page_pk primary key(page_id)
+  unique(corporation_id, name),
+  constraint corporation_pk primary key(corporation_id)
+);
+
+create table activity
+(
+  activity_id serial not null,
+  title varchar(300) not null,
+  status varchar(100) not null,
+  description text not null,
+  unique(activity_id),
+  constraint activity_pk primary key(activity_id)
 );
 
 create table module
