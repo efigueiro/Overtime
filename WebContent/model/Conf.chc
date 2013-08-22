@@ -5,12 +5,12 @@
       <dirLogico Valor="C:\Users\everson.figueiro\Desktop\"/>
       <dirConceitual Valor="C:\Users\everson.figueiro\Desktop\"/>
       <showLHint Valor="True"/>
-      <Tempo Valor="5"/>
+      <Tempo Valor="1"/>
       <ExibirLog Valor="False"/>
     </Configuracoes>
     <Arquivos>
-      <Arq01 Valor="C:\USERS\EVERSON.FIGUEIRO\DESKTOP\OVERTIME.BRM"/>
-      <Arq02 Valor=""/>
+      <Arq01 Valor="C:\WORKSPACE\OVERTIME\WEBCONTENT\MODEL\OVERTIME.BRM"/>
+      <Arq02 Valor="C:\USERS\EVERSON.FIGUEIRO\DESKTOP\OVERTIME.BRM"/>
       <Arq03 Valor=""/>
       <Arq04 Valor=""/>
       <Arq05 Valor=""/>
