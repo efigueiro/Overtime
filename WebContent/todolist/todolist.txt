@@ -1,0 +1,9 @@
+Tarefas de desenvolvimento:
+
+
+1) Criar fragmentos de página(include) separado para o menu e para o formulário de login, pois quando o usuário estiver logado ele não deve ver o formulário de 
+login. O usuário deverá ver somente uma saudação seguido do seu nome de usuário e um link de sair.
+
+2) Criar/copiar logica de login de outro sistema(insider acho que esta completo) e implementar no overtime.
+
+3) Analisar tela do sistema com os campos de preenchimento dos dados de workday e activity.
