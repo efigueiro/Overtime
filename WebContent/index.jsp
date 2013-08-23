@@ -42,7 +42,7 @@
     		
     		<div class="span10">
      	 		<div class="hero-unit">
-  					<h3>Bem vindo!</h3>
+  					<h3><%=Msg.getProperty("application.welcome")%></h3>
   					<p><%=Msg.getProperty("application.description")%></p>
   					
   				</div>
